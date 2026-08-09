@@ -4,7 +4,7 @@
 // ================= FECHA DE INICIO =================
 // Elige SOLO UNA de las siguientes líneas:
 
-var together = new Date(2026, 8, 2, 0, 0, 0);           // ← la más confiable
+var together = new Date(2026, 7, 2, 0, 0, 0);           // ← la más confiable
 // var together = new Date("2025-11-07T00:00:00");
 // var together = new Date("2025-11-07T00:00:00-05:00");
 
