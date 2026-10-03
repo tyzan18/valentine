@@ -258,7 +258,7 @@ Seed.prototype.draw = function() {
         }, 12000);  // 12 segundos después del click → ajusta a 15000 o 18000 si quieres esperar más al árbol
 
         // El contador empieza a contar desde el momento del click
-        var together = new Date(2026, 7, 17, 0, 0, 0);
+        var together = new Date(2025, 10, 7, 0, 0, 0);
         function updateClock() {
             timeElapse(together);
         }
