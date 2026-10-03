@@ -1,4 +1,4 @@
-(function () {
+w(function () {
     var canvas = $('#canvas');
 
     if (!canvas[0].getContext) {
@@ -134,7 +134,7 @@
     $("#clock-box").fadeIn(1500);    // fade suave del contador (1.5 seg)
 
     // Iniciamos el conteo real aquí (para que no aparezca antes)
-    var together = new Date(2026, 7, 2, 0, 0, 0);
+    var together = new Date(2026, 7, 17, 0, 0, 0);
     timeElapse(together);            // primera actualización
     setInterval(function() { timeElapse(together); }, 1000);
 }));
@@ -152,7 +152,7 @@
     runAsync().start();
 })();
 $(document).ready(function() {
-    var together = new Date(2026, 7, 2);
+    var together = new Date(2026, 7, 17);
     setInterval(function() {
         timeElapse(together);
     }, 1000);
@@ -161,7 +161,7 @@ $(document).ready(function() {
 });
 // Al final del archivo (antes del último });
 $(document).ready(function() {
-    var together = new Date(2026, 7, 2, 0, 0, 0);
+    var together = new Date(2026, 7, 17, 0, 0, 0);
 
     // Ocultamos el clock-box al inicio para controlarlo después
     $("#clock-box").hide();
@@ -175,7 +175,7 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
     // Contador siempre activo (pero el cuadro #clock-box sigue oculto hasta el fade)
-    var together = new Date(2026, 7, 2, 0, 0, 0);
+    var together = new Date(2026, 7, 17, 0, 0, 0);
     function updateClock() {
         timeElapse(together);
     }
@@ -258,7 +258,7 @@ Seed.prototype.draw = function() {
         }, 12000);  // 12 segundos después del click → ajusta a 15000 o 18000 si quieres esperar más al árbol
 
         // El contador empieza a contar desde el momento del click
-        var together = new Date(2025, 10, 7, 0, 0, 0);
+        var together = new Date(2026, 7, 17, 0, 0, 0);
         function updateClock() {
             timeElapse(together);
         }
